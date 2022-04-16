@@ -20,7 +20,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     animation-name: startingAnim;
-    animation-duration: 2s;
+    animation-duration: 2.01s;
     animation-fill-mode: forwards; 
     background-image: url(icon.png);
     background-size: 0px;
