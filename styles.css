@@ -82,7 +82,7 @@ body{
 
 @keyframes textgrow {
     from{ font-size: 0% ; }
-    to{ font-size: 10%;}
+    to{ font-size: 30%;}
 }
 
 .Name{
