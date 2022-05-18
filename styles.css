@@ -1,4 +1,3 @@
-
 body {
     background-color: #5d221e;
     text-align: center;
@@ -6,12 +5,45 @@ body {
     display: block;
 }
 
+.opener1 {
+    position: absolute;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #d8483e;
+    animation-name: growfade;
+    animation-duration: 1.7s;
+    opacity: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.opener2 {
+    position: absolute;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #d8483e;
+    animation-name: growfade2;
+    animation-duration: 1.7s;
+    animation-direction: reverse;
+    animation-delay: 1;
+    opacity: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .center {
+    opacity: 0%;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
 }
 
 .lx-profile-img {
@@ -23,9 +55,10 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
 .lx-header-txt {
     color: #fff;
-    font-family: Inter,sans-serif;
+    font-family: Inter, sans-serif;
     text-align: center;
     font-size: 3.5rem;
     font-weight: 700;
@@ -37,7 +70,8 @@ body {
     color: #f4746b;
 }
 
-.div-center, .lx-socials {
+.div-center,
+.lx-socials {
     display: grid;
     justify-content: center;
 }
@@ -59,7 +93,8 @@ body {
     background: #a53e37;
     transition: all .15s ease-in-out;
 }
-/* @keyframes fade {
+
+@keyframes fade {
     from {
         opacity: 0%;
     }
@@ -108,71 +143,3 @@ body {
         height: 50px;
     }
 }
-
-
-.opener1 {
-    position: absolute;
-    border-radius: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #d8483e;
-    animation-name: growfade;
-    animation-duration: 1.7s;
-    opacity: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.opener2 {
-    position: absolute;
-    border-radius: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #d8483e;
-    animation-name: growfade2;
-    animation-duration: 1.7s;
-    animation-direction: reverse;
-    animation-delay: 1;
-    opacity: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.mobile {
-    display: none;
-}
-@media only screen and (max-width: 800px) {
-    body {
-        background-color: #5d221e;
-        text-align: center;
-    }
-    .opener2 {
-        display: none;
-    }
-    .opener1 {
-        display: none;
-    }
-
-    .buttons {
-        display: none;
-    }
-    i {
-        display: none;
-    }
-    img {
-        display: none;
-    }
-    h1 {
-        display: none;
-    }
-    .mobile {
-        color: #fff;
-        font-family: Inter, sans-serif;
-        text-align: center;
-        font-size: x-large;
-        font-weight: 700;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-} */
