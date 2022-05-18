@@ -1,11 +1,65 @@
-@media only screen and (min-width: 800px) {
 
 body {
     background-color: #5d221e;
     text-align: center;
+    margin: 8px;
+    display: block;
 }
 
-@keyframes fade {
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.lx-profile-img {
+    -webkit-border-radius: 100%;
+    width: auto;
+    height: 250px;
+    transition: all .2s ease-in-out;
+    border: 7px solid #a53e37;
+    margin-left: auto;
+    margin-right: auto;
+}
+.lx-header-txt {
+    color: #fff;
+    font-family: Inter,sans-serif;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.lx-highlight {
+    color: #f4746b;
+}
+
+.div-center, .lx-socials {
+    display: grid;
+    justify-content: center;
+}
+
+.lx-socials {
+    align-content: center;
+    gap: 5px;
+    grid-auto-flow: column;
+}
+
+.lx-social-btn {
+    padding: 15px;
+    font-size: 25px;
+    width: 30px;
+    text-align: center;
+    margin: 5px 2px;
+    border-radius: 20%;
+    color: #f4746b;
+    background: #a53e37;
+    transition: all .15s ease-in-out;
+}
+/* @keyframes fade {
     from {
         opacity: 0%;
     }
@@ -55,84 +109,6 @@ body {
     }
 }
 
-h1 {
-    color: #fff;
-    font-family: Inter, sans-serif;
-    text-align: center;
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -20%);
-    opacity: 0%;
-    animation-name: fade;
-    animation-duration: 1.5s;
-    animation-delay: 1.5s;
-    animation-fill-mode: forwards;
-}
-
-.blue {
-    color: #d8483e;
-
-}
-
-img {
-    border-radius: 100%;
-    width: 250px;
-    height: 250px;
-    ;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -70%);
-    outline: 7.5px solid #923832;
-    opacity: 0%;
-    animation-name: fade;
-    animation-duration: 1.5s;
-    animation-delay: 1.5s;
-    animation-fill-mode: forwards;
-}
-
-.buttons {
-    height: 70px;
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -70%);
-    display: flex;
-    background-color: #5d221e;
-    animation-name: fade;
-    animation-duration: 1.5s;
-    animation-delay: 1.5s;
-    animation-fill-mode: forwards;
-}
-
-.buttons>a {
-    background-color: #923832;
-    padding: 0.8rem;
-    font-size: 2.5rem;
-    border-radius: 20%;
-    margin: 5px;
-    height: 2.5rem;
-    opacity: 0%;
-    animation-name: fade;
-    animation-duration: 1.5s;
-    animation-delay: 1.5s;
-    animation-fill-mode: forwards;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-i {
-    color: #d8483e;
-    opacity: 0%;
-    animation-fill-mode: forwards;
-    animation-name: fade;
-    animation-duration: 1.5s;
-    animation-delay: 1.5s;
-}
 
 .opener1 {
     position: absolute;
@@ -163,7 +139,6 @@ i {
 }
 .mobile {
     display: none;
-}
 }
 @media only screen and (max-width: 800px) {
     body {
@@ -200,4 +175,4 @@ i {
         left: 50%;
         transform: translate(-50%, -50%);
     }
-}
+} */
